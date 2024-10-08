@@ -1,0 +1,1 @@
+tugas_minggu4.Menentukan_minmax_rata

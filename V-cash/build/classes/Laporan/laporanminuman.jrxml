@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6f510e50-df9e-4f4b-b06e-fc6fcf1ebb43">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_databarang.`kode_minuman` AS tb_databarang_kode_minuman,
+     tb_databarang.`nama_minuman` AS tb_databarang_nama_minuman,
+     tb_databarang.`harga` AS tb_databarang_harga,
+     tb_databarang.`stok` AS tb_databarang_stok
+FROM
+     `tb_databarang` tb_databarang]]>
+	</queryString>
+	<field name="tb_databarang_kode_minuman" class="java.lang.Integer"/>
+	<field name="tb_databarang_nama_minuman" class="java.lang.String"/>
+	<field name="tb_databarang_harga" class="java.lang.Integer"/>
+	<field name="tb_databarang_stok" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="169" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="152" width="802" height="1" uuid="7a536244-4e19-47af-a7c2-473e1fc3c088"/>
+			</line>
+			<image>
+				<reportElement x="123" y="37" width="121" height="85" uuid="f18b60b8-c562-4c5e-ab27-9598edd7f7f2"/>
+				<imageExpression><![CDATA["F:\\cafe\\src\\gambarasset\\veganway.id-31052021-0001-removebg-preview.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="279" y="47" width="312" height="35" uuid="b46bb64d-d722-4202-9185-c0d422cb2f47"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA MINUMAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="87" width="224" height="35" uuid="b6aab5dc-8605-48c4-944a-3830d7fe98ac"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[CAFE VEGAN WAY]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="712" y="0" width="100" height="20" uuid="24ac1ef1-38b6-431e-a2b1-5180d9f106b5"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="0" width="100" height="20" uuid="7ac3174e-d8b0-473e-8d5f-4d4b50c4ef5b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode minuman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="100" height="20" uuid="b3212139-0476-495b-8d74-49cdfb5615c1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Minuman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="100" height="20" uuid="817f4380-9b0c-4105-9332-578e0ec2c634"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="530" y="0" width="100" height="20" uuid="08789e2a-9ccc-4003-968b-605fc0a15834"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="230" y="0" width="100" height="20" uuid="af5547e6-c7ca-4521-bf11-225246951611"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_databarang_kode_minuman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="20" uuid="f133d8d5-1a4a-44ed-bdbf-d6549b749594"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_databarang_nama_minuman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="100" height="20" uuid="a8d9a5e6-66d5-475b-adec-45e927749ca4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_databarang_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="0" width="100" height="20" uuid="66c18455-3962-4cfb-a731-0c5efecce5d1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_databarang_stok}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="7fee8a93-a546-484f-bdad-1765e636c6a2"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27378e1d-f037-40d4-9089-6bbacce2a67d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_dataminuman.`kode_minuman` AS tb_dataminuman_kode_minuman,
+     tb_dataminuman.`nama_minuman` AS tb_dataminuman_nama_minuman,
+     tb_dataminuman.`harga` AS tb_dataminuman_harga,
+     tb_dataminuman.`stok` AS tb_dataminuman_stok,
+     tb_dataminuman.`tanggal` AS tb_dataminuman_tanggal
+FROM
+     `tb_dataminuman` tb_dataminuman]]>
+	</queryString>
+	<field name="tb_dataminuman_kode_minuman" class="java.lang.Integer"/>
+	<field name="tb_dataminuman_nama_minuman" class="java.lang.String"/>
+	<field name="tb_dataminuman_harga" class="java.lang.Integer"/>
+	<field name="tb_dataminuman_stok" class="java.lang.Integer"/>
+	<field name="tb_dataminuman_tanggal" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="139" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="32" width="555" height="1" uuid="12619de2-192d-43df-ae15-8d3314274506"/>
+			</line>
+			<staticText>
+				<reportElement x="127" y="53" width="323" height="33" uuid="5cf1a601-cbaa-43b2-a4b3-8f85ab11af14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA LAPORAN MINUMAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="86" width="229" height="33" uuid="cd5f9d3d-3e3c-4410-9d0d-65bb358f304d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CAFE VEGAN WAY]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="128" width="555" height="1" uuid="5b20371d-b48d-4505-9a1e-5e630ec087eb"/>
+			</line>
+			<image>
+				<reportElement x="46" y="32" width="100" height="75" uuid="5d592f4d-10db-4d27-8179-8de55669da12"/>
+				<imageExpression><![CDATA["C:\\Users\\Lenovo\\Downloads\\veganway.id-31052021-0001-removebg-preview.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="455" y="0" width="100" height="20" uuid="cd3a6bce-4fae-4b29-9c11-487e78228280"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="27" y="0" width="100" height="20" backcolor="#6699FF" uuid="265e3bec-586e-4c25-b682-e9423960bbdd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Minuman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="127" y="0" width="100" height="20" backcolor="#6699FF" uuid="d4b86980-2496-43f2-b50d-c36d0494a616"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Minuman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="227" y="0" width="100" height="20" backcolor="#6699FF" uuid="a3c99d00-85af-4cb7-9f79-6396772367d8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="327" y="0" width="100" height="20" backcolor="#6699FF" uuid="dd4c69ed-dc99-485c-96ba-b10e1dfcec3b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="427" y="0" width="100" height="20" backcolor="#6699FF" uuid="b27dc676-bb56-4d0f-9193-dffc435a60b4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="27" y="0" width="100" height="20" uuid="1edf6052-f5f9-422c-8caa-80d53fd3f248"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_dataminuman_kode_minuman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="0" width="100" height="20" uuid="902b9e6a-630c-42fa-a37b-000cc88b1490"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_dataminuman_nama_minuman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="0" width="100" height="20" uuid="a3d23aad-c070-4e9a-b79d-ffd40e5bfce9"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_dataminuman_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="327" y="0" width="100" height="20" uuid="0f62f43f-2761-4f70-a503-2a67f7e12ec4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_dataminuman_stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="100" height="20" uuid="264f02f4-38f9-412e-813e-a2bab5ac9d8d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_dataminuman_tanggal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="455" y="0" width="100" height="20" uuid="32bbdad9-ad9b-4683-83e5-cb45315b31e0"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
